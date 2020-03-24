@@ -341,3 +341,17 @@ MiniGrid-FourRooms-v0:
   ent_coef: 0.0
   learning_rate: 2.5e-4
   cliprange: 0.2
+
+# custom
+canoe_sim-v0:
+  n_envs: 1
+  n_timesteps: !!float 50000
+  policy: 'MlpPolicy'
+  n_steps: 32
+  nminibatches: 1
+  lam: 0.8
+  gamma: 0.95
+  noptepochs: 20
+  ent_coef: 0.0
+  learning_rate: lin_0.001
+  cliprange: lin_0.2

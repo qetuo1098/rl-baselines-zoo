@@ -84,3 +84,15 @@ HopperBulletEnv-v0:
   critic_lr: 0.00156
   normalize_observations: True
   normalize_returns: False
+
+# Custom
+canoe_sim-v0:
+  n_timesteps: !!float 2e6
+  policy: 'LnMlpPolicy'
+  gamma: 0.95
+  memory_limit: 1000000
+  noise_type: 'normal'
+  noise_std: 0.15
+  batch_size: 128
+  normalize_observations: True
+  normalize_returns: True

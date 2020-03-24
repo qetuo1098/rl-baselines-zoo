@@ -13,6 +13,7 @@ warnings.filterwarnings("ignore", category=FutureWarning, module='tensorflow')
 warnings.filterwarnings("ignore", category=UserWarning, module='gym')
 
 import gym
+import gym_canoe_sim0
 import numpy as np
 import yaml
 # Optional dependencies
